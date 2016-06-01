@@ -1,5 +1,8 @@
 body {
   background-image: url("greypet.jpg");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
 }
 
 .homeTitle {
@@ -63,5 +66,9 @@ body {
 }
 
 .petFavorites {
-  border: solid black 2px;
+  padding: 10px;
+}
+
+.petFavorites img {
+  border: solid white 2px;
 }
