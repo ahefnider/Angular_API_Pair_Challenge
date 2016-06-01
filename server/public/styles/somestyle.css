@@ -1,0 +1,67 @@
+body {
+  background-image: url("greypet.jpg");
+}
+
+.homeTitle {
+  text-align: center;
+  color: peachpuff;
+}
+
+.favoritesTitle {
+  text-align: center;
+  color: peachpuff;
+}
+
+.container {
+  color: peachpuff;
+  padding: 20px;
+}
+
+.randomAnimal {
+  color: black;
+}
+
+#favoriteButton {
+  color: black;
+}
+
+.navbar {
+  background-image: url("pet.jpg");
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+
+.homeBloop {
+  color: peachpuff;
+}
+
+.navButtons {
+  background-color: lightgrey;
+  padding: 5px;
+  border: solid grey 2px;
+}
+
+#favoriteCount {
+  color: black;
+}
+
+.breadcrumb {
+  align-content: center;
+  overflow: hidden;
+  width: 150px;
+  height: 35px;
+}
+
+.badge {
+  text-align: center;
+  background-color: lightgrey;
+}
+
+.animalSelector {
+    width: 150px !important;
+    height: 45px !important;
+}
+
+.petFavorites {
+  border: solid black 2px;
+}

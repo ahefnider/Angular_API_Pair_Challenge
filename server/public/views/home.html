@@ -1,0 +1,19 @@
+<ol class="breadcrumb">
+<li class="active">Home</li>
+</ol>
+<h1 class="homeTitle">Home</h1>
+<div class="container" ng-controller="PetController">
+  <div class="col-md-6 col-md-offset-3" id="animalInfo">
+    <h2 class="homeBloop">Find a random pet!</h2>
+    <ul>
+    <li id="favoriteCount" class="badge">Favorites: {{count}}</li>
+    </ul>
+    <select class="animalSelector btn btn-default btn-lg dropdown-toggle" data-toggle="dropdown" name="petSelector" ng-model="selectAnimal" ng-options="pet.label for pet in listPets">
+    </select>
+    <button class="randomAnimal btn btn-primary btn-lg" ng-click="getAnimal(selectAnimal.type)">Random {{selectAnimal.label}}</button>
+    <h2>{{animal.name.$t}}</h2>
+    <p>{{animal.description.$t}}</p>
+    <img ng-if="animal.media.photos.photo[2].$t" ng-src="{{animal.media.photos.photo[2].$t}}" class="animalPicture"></img>
+    <button id="favoriteButton" class="glyphicon glyphicon-plus btn btn-primary" ng-click="addToFavorites()"> Favorite</button>
+  </div>
+</div>

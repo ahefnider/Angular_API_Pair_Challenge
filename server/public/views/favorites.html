@@ -1,0 +1,16 @@
+<!-- tried breadcrumbs. It's only a two page site, but still kinda cool.  -->
+<ol class="breadcrumb">
+<li><a href="#home">Home</a></li>
+<li class="active">Favorites</li>
+</ol>
+<h1 class="favoritesTitle">Favorites</h1>
+<div class="container">
+  <div class="row " ng-repeat="pet in favorites">
+    <div class="petFavorites col-md-6 col-md-offset-3">
+      <h2>{{pet.petName}}</h2>
+      <p>{{pet.petId}}</p>
+      <p>{{pet.description}}</p>
+      <img ng-src="{{pet.imgURL}}"/>
+    </div>
+  </div>
+</div>
